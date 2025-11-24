@@ -49,3 +49,7 @@ app.get("/", (req, res) => {
 	res.send("Server del mio blog");
 	console.log(req.query);
 });
+
+app.get("/bacheca", (req, res) => {
+	res.json(posts);
+});
