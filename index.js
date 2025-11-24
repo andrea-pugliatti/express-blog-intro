@@ -50,7 +50,7 @@ app.get("/", (req, res) => {
 	console.log(req.query);
 });
 
-app.get("/bacheca", (req, res) => {
+app.get("/bacheca", (_, res) => {
 	res.json(posts);
 });
 
